@@ -1,0 +1,7 @@
+{
+    "search.exclude": {
+        "**/playground": true,
+    },
+    "vue.codeActions.enabled": false,
+    "search.useIgnoreFiles": false
+}
