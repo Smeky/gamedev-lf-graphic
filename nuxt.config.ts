@@ -13,9 +13,4 @@ export default defineNuxtConfig({
       { rel: 'stylesheet', href: 'https://fonts.cdnfonts.com/css/roboto' },
     ]
   },
-
-  app: {
-    basePath: '/gamedev-lf-graphic/',
-    assetsPath: '/gamedev-lf-graphic/_nuxt/',
-  },
 })
