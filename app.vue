@@ -11,11 +11,11 @@
         <div class="page-content">
             <h1>Hledáme kreativního ducha,<br /> který dá tvář našemu snu!</h1>
             <p class="page-separator">~</p>
-            <h2>Právě teď máš jedinečnou možnost stát u zrodu nové Rogue-lite hry</h2>
+            <h2>Právě teď máš jedinečnou možnost stát u zrodu nové<br/>Rogue-lite hry</h2>
 
-            <p>Hledáme tvořivého grafika/grafičku, který/á s námi sdílí vášeň pro hry a má chuť přispět svým stylem a kreativitou k vývoji naší hry. Pokud máš zkušenosti nebo zájem o 2D/3D grafiku, miluješ herní design a chceš být u samého začátku něčeho nového a unikatního, jsi přesně ten, koho hledáme.</p>
+            <h3>Hledáme tvořivého 2D/3D grafika/grafičku, který/á s námi sdílí vášeň pro hry. Máš-li chuť a zápal, i kdyby bez zkušeností v herním vývoji, tak jsi právě ten, koho hledáme.</h3>
 
-            <p>Jsme trio nadšenců z Plzně, které spojuje jedno – vášeň pro vývoj her. Každý z nás přináší do projektu něco svého, ale všichni sdílíme společný sen: vytvořit hru, která osloví hráče, jako jsme my, po celém světě a zanechá v nich trvalý dojem. Snažíme se překonávat tradiční přístupy a přinášet nové, svěží myšlenky do světa indie her.</p>
+            <p><i>Jsme trio nadšenců z Plzně, které spojuje jedno – vášeň pro vývoj her. Každý z nás přináší do projektu něco svého, ale všichni sdílíme společný sen: vytvořit hru, která osloví hráče, jako jsme my, po celém světě.</i></p>
 
             <div class="page-contact">
                 <p>Napiš nám!</p>
@@ -64,6 +64,7 @@ p {
     padding: 60px 20px;
     min-height: 100vh;
     height: 100%;
+    box-sizing: border-box;
 
     @include lg() {
         display: grid;
@@ -92,7 +93,7 @@ p {
             width: 100%;
             height: 100%;
             background-color: #000;
-            opacity: 0.5;
+            opacity: 0.3;
             z-index: 1;
         }
 
@@ -106,12 +107,13 @@ p {
             height: 20%;
             background: linear-gradient(180deg, rgba(#0c1729, 0) 0%, #0c1729 100%);
             z-index: 1;
+            opacity: 0;
         }
     }
 
     .page-separator {
-        margin-top: -2rem;
-        margin-bottom: -2rem;
+        margin-top: -2.5rem;
+        margin-bottom: -2.5rem;
     }
 
     .page-content {
@@ -146,6 +148,16 @@ p {
             font-size: 2rem;
             line-height: 1.2;
             max-width: max(50%, 865px);
+        }
+
+        > h3 {
+            font-size: 1.2rem;
+            max-width: max(50%, 865px);
+            margin: 0.5rem 0;
+
+            @include lg() {
+                font-size: 1.5rem;
+            }
         }
 
         > p {
